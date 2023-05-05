@@ -1,0 +1,23 @@
+.form_container {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(40, 37, 116) 0%,
+    rgba(9, 9, 121, 1) 18%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.form-outline {
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(29, 19, 101, 0.925);
+}
+form * {
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+.optiopn {
+  background-color: rgb(255, 89, 0);
+}

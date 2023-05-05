@@ -1,0 +1,40 @@
+<div class='alert alert-warning alert-dismissible fade show' role='alert'>
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+        <span aria-hidden='true'>&times;</span>
+    </button>
+</div>
+
+<script>alert('This is Present in data base')
+</script>
+
+<li class='nav-item bg-secondary'>
+    <a href=' class=' nav-link text-light'>
+        <h4>category name</h4>
+    </a>
+</li>
+
+<?php 
+
+
+$select_category="SELECT *FROM `category`";
+$result_category=mysqli_query($conn,$select_category);
+// $row_data=mysqli_fetch_assoc($result_category);
+// echo $row_data['category_title'];
+while($row_data=mysqli_fetch_assoc($result_category)){
+    $category_title=$row_data['category_title'];
+    $category_id=$row_data['category_id'];
+    echo "<li class='nav-item bg-light'>
+    <a href=' class=' nav-link text-light'>
+        <h4>$category_title</h4>
+    </a>
+</li>";
+
+}
+?>
+
+
+<div class="form-outline mb-4 w-50 m-auto">
+    <label for="product_image2" class="form-label">Product Image 1</label>
+    <input type="file" name="product_image2" id="product_image2" class="form-control" required="required">
+</div>

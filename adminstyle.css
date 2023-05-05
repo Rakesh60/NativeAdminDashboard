@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.adminlogo {
+  width: 7%;
+  height: 7%;
+}
